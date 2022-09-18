@@ -1,0 +1,52 @@
+=== Day-01(Dart) ===
+
+--Outcome of the day--
+TODO in day-01
+1. Environment setup
+2. Input, Output, Variable, Data types
+3. final and const keywords
+4. Interpolation
+5. Operators
+6. Conditional statements
+------------x--------------
+
+1) Downloaded android studio, flutter SDK and dart SDK and initialised path
+2) Input = what user commands to the program. Output = what result the program shows to the user.
+    ~ input function - readLineSync(); to use it we must import 'dart:io'; library.
+       * dart:io - library can't be used for Browser based apps, its only for Server, Command line scripts, Flutter Mobile and Desktop apps
+    ~ output function - print() & stdout.write()
+       * print() - moves cursor to the next line
+       * stdout.write() - remains the cursor in the same line
+    ~ data types
+       * Number - int, double, num = num is a keyword like int and double, which inherits data type of the int and double.
+         ex: var a = num.parse('1'); // here num inherits integer type
+             var b = num.parse('2.1'); // num inherits double type.
+             num c = 12;
+       * Strings - 'String' is a sequence of characters
+       * Booleans - 'bool' is true or false
+       * Lists - 'List' it's an ordered group of object like array
+       * Maps - 'Map' key-value pair represents set of values
+       * Sets - 'Set' A set in Dart is an unordered collection of unique items.
+       * Runes - 'Runes'
+       * Symbols - 'Symbol'
+       * Null
+3) final = the value is unchanged after anywhere. const = same as 'final' but it is compile-time constant.
+       * final - can declare variable without initializing. after initialization it can't be modified.
+       * const - must be initialized at declaration time.
+5) Operators
+       * Arithmetic - (+, -, *, /, %, ~/, -expr) ~/ means divide returns integer, -expr means negative of values (ex: -9)
+       * Relational - (>, <, >=, <=, ==,!=)
+       * Type Test - (is, is!)
+       * Bitwise - (&, |, ^[XOR], ~[not], <<, >>)
+       * Logical - (&&, ||, !)
+       * Assignment - (=, ??=) ??= means assign the value only if it is null
+         ex: var a;
+             a ??= 12;// it will assign cause it is NULL
+             a ??= 50;// value will not be assigned
+6) Conditional
+       * Ternary - condition ? expression1[if true then execute] : expression2[else execute]
+       * expression1 ?? expression2 // if exp1 is non-null then return its value otherwise exp2 value returned
+         ex: int n;
+             var a = n ?? "n has null value";
+       * if, if-else...
+       * switch-case
